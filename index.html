@@ -31,6 +31,11 @@
         }
       }
     </script>
+    <script>
+      // Safety Polyfill: Ensure process.env exists in the browser to prevent crashes
+      // when accessing process.env.API_KEY in the code.
+      window.process = window.process || { env: { API_KEY: '' } };
+    </script>
     <style>
       body {
         background-color: #0f172a;
@@ -65,5 +70,6 @@
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
