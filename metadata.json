@@ -1,0 +1,5 @@
+{
+  "name": "RadAssist AI",
+  "description": "An advanced AI Radiology Report Assistant for generating standardized reports, safety checks, and resident learning points.",
+  "requestFramePermissions": []
+}
